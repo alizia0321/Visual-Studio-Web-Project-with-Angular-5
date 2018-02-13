@@ -111,17 +111,18 @@ Merging
       in the “Pre-build event command line:” box (of course the echos are optional):
       
         echo "Using ng build on $(ProjectName)" &&^
-        ng build &&^
-        echo 'Copy bundle files and index.html from dist folder to src folder' &&^
-        xcopy /I /E /Y /F "$(ProjectDir)dist\*.js" "$(ProjectDir)Src" &&^
-        xcopy /I /E /Y /F "$(ProjectDir)dist\index.html" "$(ProjectDir)Src" 
+        ng build  
 
     ^ Run Build Solution to verify the build process works
-        -- The output window should show 
-            * The output from the ng build showing the webpack js files and
-            * that the files were copied successfully as referenced above
-    ^ Tell the index file to look in the current folder for the webpack files by
-        -- Edit index.html change the base href from “/” to “./”
+        -- The output window should show the output from the ng build showing the webpack js bundle files
+        -- Bundle files are created by the ng build process and by default are created in the dist folder (as 
+             configured in the .angular-cli.json file (located at the root of the application).
+    ^ o	Configure the index file as the start up and edit it to look in the dist folder for the webpack bundle files
+        -- Right click on the index file and click on Set As Start Page
+        -- Copy the includes from the dist/index.html file and then add a “/dist/prior to the name of each file.
+           Eg.
+              From: <script type="text/javascript" src="inline.bundle.js"></script>
+              To:   <script type="text/javascript" src="/dist/inline.bundle.js"></script>
     ^ Launch the Browser from Visual Studio to verify the Angular Application displays
 
 
