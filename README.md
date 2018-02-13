@@ -88,7 +88,9 @@ Merging
     ^ selecting “Open Folder in File Explorer” from context menu, 
     ^ shift+right clicking in open space, 
     ^ clicking on “open command window here” from the context menu, 
-    ^ typing the following: ng new <project name> (should be the exact same name as the project)
+    ^ typing the following: ng new <project name>  --skip-git
+        -- <project name> should be the exact same name as the project
+        -- skip git since will add to GitHub through Visual Studio
   go into Visual Studio to include the files from the CLI project into the VS project
 
   * Click on the Show All Files button
