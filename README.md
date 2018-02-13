@@ -117,14 +117,18 @@ Merging
         -- The output window should show the output from the ng build showing the webpack js bundle files
         -- Bundle files are created by the ng build process and by default are created in the dist folder (as 
              configured in the .angular-cli.json file (located at the root of the application).
-    ^ o	Configure the index file as the start up and edit it to look in the dist folder for the webpack bundle files
+    ^ Configure the index file as the start up and edit it to look in the dist folder for the webpack bundle files
         -- Right click on the index file and click on Set As Start Page
         -- Copy the includes from the dist/index.html file and then add a “/dist/" prior to the name of each file.
            Eg. 
               From: &lt;script type="text/javascript" src="inline.bundle.js"&gt;&lt;/script>
               To:   &lt;script type="text/javascript" src="/dist/inline.bundle.js"&gt;&lt;/script>
               
-    ^ Launch the Browser from Visual Studio to verify the Angular Application displays
+    ^ Launch the Chrome Browser from Visual Studio to verify the Angular Application displays
+    ^ Launch the IE Browser from Visual Studio
+        -- There should be an error message from the &#95;for-of.js file that there is an unhandled exception at line 795, 
+           column 36 in http://localhost:<port#>/dist/polyfills.bundle.js. This is because the polyfills.ts file needs 
+           to be edited to uncomment the section for IE9, IE10, and IE11 so that the needed polyfills are added for Internet Explorer.
 
 
 </pre>
