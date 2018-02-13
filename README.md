@@ -120,10 +120,10 @@ Merging
     ^ o	Configure the index file as the start up and edit it to look in the dist folder for the webpack bundle files
         -- Right click on the index file and click on Set As Start Page
         -- Copy the includes from the dist/index.html file and then add a “/dist/" prior to the name of each file.
-           Eg. <code>
+           Eg. <!-->
               From: <script type="text/javascript" src="inline.bundle.js"></script>
               To:   <script type="text/javascript" src="/dist/inline.bundle.js"></script>
-              </code>
+              <-->
     ^ Launch the Browser from Visual Studio to verify the Angular Application displays
 
 
