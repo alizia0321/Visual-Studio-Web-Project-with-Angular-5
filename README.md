@@ -130,6 +130,7 @@ Merging
            line 795, column 36 in http://localhost:<port#>/dist/polyfills.bundle.js. This is because the polyfills.ts 
            file needs to be edited to uncomment the section for IE9, IE10, and IE11 so that the needed polyfills are 
            added for Internet Explorer.
+        -- 
 
 
 </pre>
