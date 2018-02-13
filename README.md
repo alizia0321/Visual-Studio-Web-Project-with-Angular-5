@@ -36,7 +36,7 @@ Step 2
     ^ Step B - Create a new project
         -- If merging with Visual Studio, navigate to the solution file folder that was created in Step 1
            otherwise, pick any folder.
-        -- ng new <project name> --skip-git (no need for git since will apply source control from Visual Studio)
+        -- ng new &lt;project name&gt; --skip-git (no need for git since will apply source control from Visual Studio)
             * Parameters
                   ^ Project name should be the exact same name as the project
                   ^ Skip git since will add to GitHub through Visual Studio
@@ -49,7 +49,7 @@ Step 2
                                 npm cache clean –force 
                             but the force switch is only needed for the previous versions of NPM 
                             (less than version 5)
-        -- ng new <project name> --skip-git (run this again if had errors as described above from cache
+        -- ng new &lt;project name&gt; --skip-git (run this again if had errors as described above from cache
             * This creates an Angular project that is completely standalone. 
               If that is all you needed you could stop here and just develop here. 
               But since we want to develop from Visual Studio instead continue with the following steps.
@@ -91,7 +91,7 @@ Merging
     ^ shift+right clicking in open space, 
     ^ clicking on “open command window here” from the context menu, 
     ^ typing the following: ng new <project name>  --skip-git
-        -- <project name> should be the exact same name as the project
+        -- &lt;project name&gt; should be the exact same name as the project
         -- skip git since will add to GitHub through Visual Studio
   go into Visual Studio to include the files from the CLI project into the VS project
 
