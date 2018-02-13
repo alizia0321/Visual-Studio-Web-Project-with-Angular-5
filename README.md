@@ -121,8 +121,8 @@ Merging
         -- Right click on the index file and click on Set As Start Page
         -- Copy the includes from the dist/index.html file and then add a “/dist/" prior to the name of each file.
            Eg. 
-              From: <script type="text/javascript" src="inline.bundle.js"></script>
-              To:   <script type="text/javascript" src="/dist/inline.bundle.js"></script>
+              From: &lt;script type="text/javascript" src="inline.bundle.js"&gt;&lt;/script>
+              To:   &lt;script type="text/javascript" src="/dist/inline.bundle.js"&gt;&lt;/script>
               
     ^ Launch the Browser from Visual Studio to verify the Angular Application displays
 
