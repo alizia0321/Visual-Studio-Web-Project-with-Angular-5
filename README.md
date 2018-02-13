@@ -6,8 +6,8 @@ Step 1
   * Create an empty template ASP.NET Web Application
 
 Step 2
-  * Create an Angular project from Angular CLI (When doing a merge with VS as described in next step 
-    make sure that this project folder is the same folder as where the project file is in the project above)
+  * Create an Angular project from Angular CLI (If doing a merge with VS in next step make sure that this 
+    project folder is the same folder as where the project file is in the project above)
     ^ Step A - Development Environment
         -- Verified that I was running:
             * at least node 6.9.x and 
@@ -32,8 +32,9 @@ Step 2
         -- If applicable upgrade NPM
             * npm install npm@latest -g 
     ^ Step B - Create a new project
-        -- Navigate to a folder you need to go to
-        -- ng new my-app
+        -- If merging with Visual Studio, navigate to the solution file folder that was created in Step 1
+           otherwise, pick any folder.
+        -- ng new my-app --skip-git (no need for git since will apply source control from Visual Studio)
             * This installs packages but it came back with errors such as needing Admin privileges to run 
               the scandir on folders that did not even exist. 
               Therefore, had to run the following command 1st:
@@ -43,7 +44,7 @@ Step 2
                                 npm cache clean –force 
                             but the force switch is only needed for the previous versions of NPM 
                             (less than version 5)
-        -- ng new my-app (run this again if had errors as described above from cache
+        -- ng new my-app --skip-git (run this again if had errors as described above from cache
             * This creates an Angular project that is completely standalone. 
               If that is all you needed you could stop here and just develop here. 
               But since we want to develop from Visual Studio instead continue with the following steps.
