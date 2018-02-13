@@ -127,10 +127,11 @@ Merging
     ^ Launch the Chrome Browser from Visual Studio to verify the Angular Application displays
     ^ Launch the IE Browser from Visual Studio
         -- There should be an error message from the &#95;for-of.js file that there is an unhandled exception at 
-           line 795, column 36 in http://localhost:<port#>/dist/polyfills.bundle.js. This is because the polyfills.ts 
-           file needs to be edited to uncomment the section for IE9, IE10, and IE11 so that the needed polyfills are 
-           added for Internet Explorer.
-        -- 
+           line 795, column 36 in http://localhost:<port#>/dist/polyfills.bundle.js. This is because the 
+           polyfills.ts file needs to be edited to uncomment the section for IE9, IE10, and IE11 so that the needed 
+           polyfills are added for Internet Explorer.
+        -- Uncomment the 14 lines to import the needed polyfills from the node_modules/core-js files.
+        -- Re-launch the IE browser from Visual Studio and all should be good now.
 
 
 </pre>
