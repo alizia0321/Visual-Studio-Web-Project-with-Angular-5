@@ -117,7 +117,7 @@ Merging
         echo "Using ng build on $(ProjectName)" &&^
         ng build  
 
-    ^ Run Build Solution to verify the build process works
+    ^ Run Build Solution to verify the build process works 
         -- The output window should show the output from the ng build showing the webpack js bundle files
         -- Bundle files are created by the ng build process and by default are created in the dist folder (as 
              configured in the .angular-cli.json file (located at the root of the application).
