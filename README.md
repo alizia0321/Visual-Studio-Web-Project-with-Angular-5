@@ -34,7 +34,10 @@ Step 2
     ^ Step B - Create a new project
         -- If merging with Visual Studio, navigate to the solution file folder that was created in Step 1
            otherwise, pick any folder.
-        -- ng new my-app --skip-git (no need for git since will apply source control from Visual Studio)
+        -- ng new <project name> --skip-git (no need for git since will apply source control from Visual Studio)
+            * Parameters
+                  ^ Project name should be the exact same name as the project
+                  ^ Skip git since will add to GitHub through Visual Studio
             * This installs packages but it came back with errors such as needing Admin privileges to run 
               the scandir on folders that did not even exist. 
               Therefore, had to run the following command 1st:
@@ -44,7 +47,7 @@ Step 2
                                 npm cache clean –force 
                             but the force switch is only needed for the previous versions of NPM 
                             (less than version 5)
-        -- ng new my-app --skip-git (run this again if had errors as described above from cache
+        -- ng new <project name> --skip-git (run this again if had errors as described above from cache
             * This creates an Angular project that is completely standalone. 
               If that is all you needed you could stop here and just develop here. 
               But since we want to develop from Visual Studio instead continue with the following steps.
@@ -57,6 +60,7 @@ Step 2
                   ^ The ng serve command launches the server, watches your files, and rebuilds the app as 
                     you make changes to those files.
                   ^ The app greets you with a message:
+                  
     ^ Step Optional – Editing Files
         -- There is no need to edit any files, all files are ready to copy over to a VS project
         -- If want to however, the following is an example of how that works
