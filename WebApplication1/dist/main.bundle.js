@@ -57,7 +57,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title1 = 'Angular!';
+        this.title1 = 'Angular 5.2.0!';
         this.title2 = 'This is a CLI Project merged with an ASP.NET Web Application (.NET Framework) Project, using an Empty template';
         this.title3 = 'No check box was checked to "Add folders and core references for:" Web Forms, MVC or Web API';
     }

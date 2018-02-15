@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title1 = 'Angular!';
+  title1 = 'Angular 5.2.0!';
 
   title2 = 'This is a CLI Project merged with an ASP.NET Web Application (.NET Framework) Project, using an Empty template';
 
