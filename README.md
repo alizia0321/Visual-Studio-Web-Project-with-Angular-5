@@ -126,7 +126,10 @@ Merging
         -- Copy the includes from the dist/index.html file and then add a “/dist/" prior to the name of each file.
            Eg. 
               From: &lt;script type="text/javascript" src="inline.bundle.js"&gt;&lt;/script>
-              To:   &lt;script type="text/javascript" src="/dist/inline.bundle.js"&gt;&lt;/script>
+              To:   &lt;script type="text/javascript" src="../dist/inline.bundle.js"&gt;&lt;/script>
+              Note: Without the .. in front of the /dist/ to get ../dist, Visual Studio would show the index page
+              as having warning messages for all of the includes that the bundle file could not be found
+              referencing the path as &lt;project name&gt;/src/dist/&lt;type&gt;bundle.js
               
     ^ Launch the Chrome Browser from Visual Studio to verify the Angular Application displays
     
